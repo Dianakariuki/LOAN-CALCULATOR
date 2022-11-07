@@ -28,4 +28,17 @@ function calculateResults(){
    // Calculate monthly payments
    const x = Math.pow(1 + calculatedInterest, calculatedPayments);
    const monthly = (principle * x * calculatedInterest) / (x - 1);
+
+   if(isFinite(monthly)){
+    monthlyPayment.value = monthly.toFixed(2);
+    totalPayment.value = (monthly * calculatedPayments).toFixed(2);
+    totalInterest.value = ((monthly * calculatedPayments) - principle).toFixed(2);
+
+       // Show results and hide the loader
+       document.querySelector('#results').style.display = 'block';
+       document.querySelector('#loading').style.display = 'none';
+   } else {
+       // Show an error message
+       showError('Please check your inputs');
+   }
 }
