@@ -44,3 +44,7 @@ function calculateResults(){
 
 }
 // Show error on invalid input
+function showError(error){
+  // Hide the results and loader
+  document.querySelector('#results').style.display = 'none';
+  document.querySelector('#loading').style.display = 'none';
