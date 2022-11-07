@@ -11,5 +11,9 @@ document.querySelector('#loan-form').addEventListener('submit', function(e){
 
 /// Calculate the results
 function calculateResults(){
+  // Declare UI variables
+  const amount = document.getElementById('amount');
+  const interest = document.getElementById(interest);
+  const years = document.getElementById(years);
   
 }
