@@ -41,4 +41,6 @@ function calculateResults(){
        // Show an error message
        showError('Please check your inputs');
    }
+
 }
+// Show error on invalid input
