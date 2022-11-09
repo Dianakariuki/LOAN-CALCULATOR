@@ -48,3 +48,7 @@ function showError(error){
   // Hide the results and loader
   document.querySelector('#results').style.display = 'none';
   document.querySelector('#loading').style.display = 'none';
+
+
+   // Create a div for the error message
+   const errorDiv = document.createElement('div');
