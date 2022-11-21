@@ -1,8 +1,8 @@
 #loading, #results {
     display: none;
 }
-a:focus, a:hover {
-    color: white;
-    background-color: black;
+input:focus, input:hover {
+    color:yellowgreen;
+    background-color:blueviolet;
     text-decoration: none
   }
