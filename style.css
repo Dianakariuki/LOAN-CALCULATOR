@@ -1,3 +1,8 @@
 #loading, #results {
     display: none;
 }
+a:focus, a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none
+  }
